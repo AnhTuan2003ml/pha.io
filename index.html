@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <!-- <meta name="veiwport" content="width-device-width,inltial-scale=1.0"> -->
+    <title>Anh Tuấn</title>
+    <link rel="stylesheet" href="demo.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+    <h2>
+        <div class="box">
+            <form class="sbox" action="/xác nhận" >
+            <form action="#">
+                <input type="text" name="name" id="name" class="stext" placeholder="Nhập tên " >
+                <button class="sbutton" type="button" onclick="changeColor()" id="check" ><i class="fa fa-search"></i></button>
+            </form>
+            </form>
+            </div>
+            
+                <a href="">
+                    <span id="coloredName" style="--i:1"></span>
+        
+                </a>
+           
+        
+
+    </h2>
+    <script>
+   
+        function changeColor() {
+            document.body.style.backgroundImage = "url('https://ghiencongnghe.info/wp-content/uploads/2023/02/vi-du-code-trai-tim-thu-khoa-ly.gif')";
+            var nameInput = document.getElementById("name");
+            var coloredName = document.getElementById("coloredName");
+            var enteredName = nameInput.value;
+            coloredName.textContent = enteredName;
+            nameInput.value = "";
+            var dialogBox = document.getElementById('name');
+            dialogBox.style.display = 'none';
+            var button = document.getElementById("check");
+            button.remove();
+            var divBox = document.querySelector(".box");
+            divBox.remove();
+            
+        }
+    </script>
+</body>
+
+</html>
